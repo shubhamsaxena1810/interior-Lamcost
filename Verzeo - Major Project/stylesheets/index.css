@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	background-image: url("https://image.freepik.com/free-vector/light-blue-geometric-background_1053-684.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+    
+}
+.jumbotron{
+	background-image: url("https://i.pinimg.com/originals/5d/ce/73/5dce7381b6d20be839fdf38a7ebbf7db.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+	color: white;
+	text-align: center;
+    
+}
+.jumbotron h1{
+	font-size: 400%;
+}
+
+.grad {
+  transition: background 0.8s;
+}
+.grad:hover {
+  background: rgba(0, 128, 255, 0.5) ; 
+    
+}
+
+    .img {
+               
+        transition: transform 1s;}                
+        
+        
+        .img:hover {
+                -ms-transform: scale(1.5); 
+                -webkit-transform: scale(1.5);
+                transform: scale(1.05); 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.effect{
+    margin: 0 15px;
+    display:inline-block;
+    
+}
+
+.effect:after{
+     display:block;
+  content: '';
+  border-bottom: solid 3px #92a8d1;  
+  transform: scaleX(0);  
+  transition: transform 500ms ease-in-out;
+}
+
+
+
+.effect:hover:after {
+transform: scaleX(1);
+}
+
+
+.dropdown{
+    
+    margin: 0 15px;
+
+    
+    
+}
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+             -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+      
+ 
+    
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+
+
+.btn {
+  background-color: rgba(30, 144, 255, 0);
+  border: none;
+  color: white;
+  
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(65, 105, 225);
+}
+
+
+.button-tooltip-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    min-height: 30px;
+
+}
+#custom-tooltip {
+    display: none;
+    margin-left: 40px;
+    padding: 5px 12px;
+    background-color: #606060;
+    border-radius: 4px;
+    color: #fff;
+    position: absolute;
+}
+
